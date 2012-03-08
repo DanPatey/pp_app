@@ -1,4 +1,6 @@
 PpApp::Application.routes.draw do
+  resources :userlists
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

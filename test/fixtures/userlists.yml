@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: MyString
+  phone: MyString
+  f_name: MyString
+  l_name: MyString
+  address: MyString
+  zip: MyString
+  spot: false
+  timestp: MyString
+  braintree_cc: MyString
+  tos: false
+  dlv: false
+  emv: false
+  flagged: false
+
+two:
+  email: MyString
+  phone: MyString
+  f_name: MyString
+  l_name: MyString
+  address: MyString
+  zip: MyString
+  spot: false
+  timestp: MyString
+  braintree_cc: MyString
+  tos: false
+  dlv: false
+  emv: false
+  flagged: false

@@ -1,0 +1,47 @@
+<h1>Listing userlists</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>F name</th>
+    <th>L name</th>
+    <th>Address</th>
+    <th>Zip</th>
+    <th>Spot</th>
+    <th>Timestp</th>
+    <th>Braintree cc</th>
+    <th>Tos</th>
+    <th>Dlv</th>
+    <th>Emv</th>
+    <th>Flagged</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @userlists.each do |userlist| %>
+  <tr>
+    <td><%= userlist.email %></td>
+    <td><%= userlist.phone %></td>
+    <td><%= userlist.f_name %></td>
+    <td><%= userlist.l_name %></td>
+    <td><%= userlist.address %></td>
+    <td><%= userlist.zip %></td>
+    <td><%= userlist.spot %></td>
+    <td><%= userlist.timestp %></td>
+    <td><%= userlist.braintree_cc %></td>
+    <td><%= userlist.tos %></td>
+    <td><%= userlist.dlv %></td>
+    <td><%= userlist.emv %></td>
+    <td><%= userlist.flagged %></td>
+    <td><%= link_to 'Show', userlist %></td>
+    <td><%= link_to 'Edit', edit_userlist_path(userlist) %></td>
+    <td><%= link_to 'Destroy', userlist, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Userlist', new_userlist_path %>

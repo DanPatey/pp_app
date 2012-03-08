@@ -1,0 +1,69 @@
+<%= form_for(@userlist) do |f| %>
+  <% if @userlist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@userlist.errors.count, "error") %> prohibited this userlist from being saved:</h2>
+
+      <ul>
+      <% @userlist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :f_name %><br />
+    <%= f.text_field :f_name %>
+  </div>
+  <div class="field">
+    <%= f.label :l_name %><br />
+    <%= f.text_field :l_name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :spot %><br />
+    <%= f.check_box :spot %>
+  </div>
+  <div class="field">
+    <%= f.label :timestp %><br />
+    <%= f.text_field :timestp %>
+  </div>
+  <div class="field">
+    <%= f.label :braintree_cc %><br />
+    <%= f.text_field :braintree_cc %>
+  </div>
+  <div class="field">
+    <%= f.label :tos %><br />
+    <%= f.check_box :tos %>
+  </div>
+  <div class="field">
+    <%= f.label :dlv %><br />
+    <%= f.check_box :dlv %>
+  </div>
+  <div class="field">
+    <%= f.label :emv %><br />
+    <%= f.check_box :emv %>
+  </div>
+  <div class="field">
+    <%= f.label :flagged %><br />
+    <%= f.check_box :flagged %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
